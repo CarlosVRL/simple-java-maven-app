@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'This is a minamal pipeline.'
+                sh 'mvn clean package'
             }
         }
     }
